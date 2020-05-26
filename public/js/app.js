@@ -1996,8 +1996,13 @@ __webpack_require__.r(__webpack_exports__);
   props: ['text'],
   data: function data() {
     return {
+<<<<<<< HEAD
       message: '',
       visible: false
+=======
+      visible: false,
+      message: ''
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
     };
   },
   created: function created() {
@@ -32737,6 +32742,7 @@ if (apiToken) {
 //     encrypted: true
 // });
 
+<<<<<<< HEAD
 
 var token = document.head.querySelector('meta[name="csrf-token"]');
 
@@ -32745,6 +32751,17 @@ if (token) {
 } else {
   console.error("CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token");
 }
+=======
+/* let token = document.head.querySelector('meta[name="csrf-token"]');
+
+if (token) {
+    window.axios.defaults.headers.common["X-CSRF-TOKEN"] = token.content;
+} else {
+    console.error (
+        "CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token"
+    );
+} */
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
 
 /***/ }),
 
@@ -32777,9 +32794,15 @@ if (token) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 __webpack_require__(/*! C:\xampp\htdocs\VUE-project\arcade_watch\resources\js\app\app.js */"./resources/js/app/app.js");
 __webpack_require__(/*! C:\xampp\htdocs\VUE-project\arcade_watch\resources\sass\app\app.scss */"./resources/sass/app/app.scss");
 module.exports = __webpack_require__(/*! C:\xampp\htdocs\VUE-project\arcade_watch\resources\sass\admin\admin.scss */"./resources/sass/admin/admin.scss");
+=======
+__webpack_require__(/*! C:\xampp\htdocs\vue\arcade_watch\resources\js\app\app.js */"./resources/js/app/app.js");
+__webpack_require__(/*! C:\xampp\htdocs\vue\arcade_watch\resources\sass\app\app.scss */"./resources/sass/app/app.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\vue\arcade_watch\resources\sass\admin\admin.scss */"./resources/sass/admin/admin.scss");
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
 
 
 /***/ })

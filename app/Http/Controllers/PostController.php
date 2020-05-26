@@ -61,7 +61,11 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
+<<<<<<< HEAD
         
+=======
+        //
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
     }
 
     /**

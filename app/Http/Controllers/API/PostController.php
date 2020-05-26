@@ -61,6 +61,10 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
+<<<<<<< HEAD
+=======
+
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
 /* 
         Rule::unique('users')->ignore($user->id, 'user_id')
 Rule::unique('users', 'email_address')->ignore($user->id),
@@ -77,6 +81,7 @@ Validator::make($data, [
 
 
         //slug,{$id} - slug ignoruj pro záznam s $id 
+<<<<<<< HEAD
         /* 'slug' => 'required|unique:posts,slug,'. $id, */
 
 
@@ -90,6 +95,19 @@ Validator::make($data, [
         
         $post = Post::find($id);
 
+=======
+        Validator::make($request, [
+            'title' => 'required',
+            /* 'slug' => ['required', Rule::unique('posts')->ignore($id, 'slug')], */
+            'slug' =>"required|unique:posts,slug,{$id}",
+            /* 'slug' => 'required|unique:posts,slug,'. $id, */
+            /* 'slug' => ['required', Rule::unique('posts')->ignore($id),], */
+            'text' => 'required',
+            'user_id' => 'required|integer|exists:users,id'
+        ]);
+
+        $post = Post::find($id);
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
         $post->update(
             $request->all()
         );

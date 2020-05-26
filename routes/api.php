@@ -19,13 +19,21 @@ use Illuminate\Support\Facades\Route;
 }); */
 
 //ochrana obalení jestli user poslal i svůj klíč
+<<<<<<< HEAD
 //zobrazí se data pouze přihlášeným uživatelům 
 /* Route::middleware(['auth:api'])->group(function () { */
+=======
+Route::middleware('auth:api')->group(function () {
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
     Route::apiResources([
         'posts' => 'API\PostController',
         'users' => 'API\UserController',
         'comments' => 'API\CommentController'
     ]);
+<<<<<<< HEAD
 /* }); */
+=======
+});
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
     
     

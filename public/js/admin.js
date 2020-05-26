@@ -2271,8 +2271,15 @@ __webpack_require__.r(__webpack_exports__);
     submitForm: function submitForm(data) {
       var _this = this;
 
+<<<<<<< HEAD
       // přes axios posílání dat 
       // poslání dat z VUE do Laravelu
+=======
+      console.log('vypis dat');
+      console.log(data); // přes axios posílání dat 
+      // poslání dat z VUE do Laravelu
+
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
       axios.post('/api/comments', data).then(function (response) {
         _this.$router.push("/admin/comments/".concat(response.data.post.id));
       })["catch"](function (errors) {
@@ -2600,10 +2607,15 @@ __webpack_require__.r(__webpack_exports__);
     submitForm: function submitForm(data) {
       var _this = this;
 
+<<<<<<< HEAD
       console.log('data');
       consol.log(this.data); // přes axios posílání dat 
       // poslání dat z VUE do Laravelu
 
+=======
+      // přes axios posílání dat 
+      // poslání dat z VUE do Laravelu
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
       axios.post('/api/posts', data).then(function (response) {
         _this.$router.push("/admin/posts/".concat(response.data.post.id));
       })["catch"](function (errors) {
@@ -2759,6 +2771,7 @@ __webpack_require__.r(__webpack_exports__);
         title: this.title,
         slug: this.slug,
         text: this.text,
+<<<<<<< HEAD
         user_id: 5
       };
       /* axios.get('api/users').then(response => {
@@ -2778,6 +2791,12 @@ __webpack_require__.r(__webpack_exports__);
 
       /* console.log(data) */
 
+=======
+        user_id: 1
+      }; //pak odpálím event
+      //od dcery k rodičovi
+
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
       this.$emit('post-form-submitted', data);
     }
   },
@@ -56342,6 +56361,10 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       return this.data.filter(function (item) {
+<<<<<<< HEAD
+=======
+        console.log(item);
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
         return item[_this.searchColumn].toLowerCase().includes(_this.search.toLowerCase());
       });
     }
@@ -57391,6 +57414,7 @@ if (apiToken) {
 //     encrypted: true
 // });
 
+<<<<<<< HEAD
 
 var token = document.head.querySelector('meta[name="csrf-token"]');
 
@@ -57399,6 +57423,17 @@ if (token) {
 } else {
   console.error("CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token");
 }
+=======
+/* let token = document.head.querySelector('meta[name="csrf-token"]');
+
+if (token) {
+    window.axios.defaults.headers.common["X-CSRF-TOKEN"] = token.content;
+} else {
+    console.error (
+        "CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token"
+    );
+} */
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
 
 /***/ }),
 
@@ -57409,7 +57444,11 @@ if (token) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = __webpack_require__(/*! C:\xampp\htdocs\VUE-project\arcade_watch\resources\js\admin\admin.js */"./resources/js/admin/admin.js");
+=======
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\vue\arcade_watch\resources\js\admin\admin.js */"./resources/js/admin/admin.js");
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
 
 
 /***/ })

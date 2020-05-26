@@ -20,7 +20,10 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+<<<<<<< HEAD
             $table->string('api_token', 80);
+=======
+>>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
             $table->timestamps();
         });
     }
