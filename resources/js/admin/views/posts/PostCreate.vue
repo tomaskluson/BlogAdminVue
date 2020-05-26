@@ -23,11 +23,6 @@
         },
         methods: {
             submitForm(data) {
-<<<<<<< HEAD
-                console.log('data')
-                consol.log(this.data)
-=======
->>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
                 // přes axios posílání dat 
                 // poslání dat z VUE do Laravelu
                 axios

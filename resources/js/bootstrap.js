@@ -32,23 +32,14 @@ if (apiToken) {
 //     encrypted: true
 // });
 
-<<<<<<< HEAD
 let token = document.head.querySelector('meta[name="csrf-token"]');
 
 if (token) {
     window.axios.defaults.headers.common["X-CSRF-TOKEN"] = token.content
-=======
-/* let token = document.head.querySelector('meta[name="csrf-token"]');
 
-if (token) {
-    window.axios.defaults.headers.common["X-CSRF-TOKEN"] = token.content;
->>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
 } else {
     console.error (
         "CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token"
     );
-<<<<<<< HEAD
 }
-=======
-} */
->>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
+

@@ -20,10 +20,6 @@ export default {
     computed: {
         filteredItems() {
             return this.data.filter(item => {
-<<<<<<< HEAD
-=======
-                console.log(item)
->>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
                 return item[this.searchColumn]
                     .toLowerCase()
                     .includes(this.search.toLowerCase())

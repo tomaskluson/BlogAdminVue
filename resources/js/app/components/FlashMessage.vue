@@ -20,13 +20,8 @@
 
         data() {
             return {
-<<<<<<< HEAD
                 message: '',
                 visible: false
-=======
-                visible: false,
-                message: ''
->>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
             }
         },
 

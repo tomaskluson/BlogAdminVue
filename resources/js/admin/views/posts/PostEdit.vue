@@ -26,10 +26,6 @@
         methods: {
             submitForm(data) {
                 let id = this.$route.params.id
-<<<<<<< HEAD
-=======
-
->>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
                 // přes axios posílání dat 
                 // poslání dat z VUE do Laravelu
                 axios

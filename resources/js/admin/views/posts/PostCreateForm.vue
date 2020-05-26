@@ -131,7 +131,6 @@
                     title: this.title,
                     slug: this.slug,
                     text: this.text,
-<<<<<<< HEAD
                     user_id: 5
                 }
 
@@ -152,16 +151,7 @@
                 //od dcery k rodičovi
                 /* console.log(data) */
                 this.$emit('post-form-submitted', data)
-=======
-                    user_id: 1
                 }
-
-                //pak odpálím event
-                //od dcery k rodičovi
-                this.$emit('post-form-submitted', data)
-               
->>>>>>> d2bfc703500574879a665e08d4083c382f8043dd
-            }
         },
         watch: {
             title(value) {
